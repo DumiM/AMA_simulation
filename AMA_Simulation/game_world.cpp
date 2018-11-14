@@ -1,11 +1,14 @@
 #include "pch.h"
 #include "game_world.h"
 #include <iostream>
-#include "agent.h"
+#include "agent_pool.h"
+#include <SDL.h>
 
 game_world* game_world::instance_ = nullptr;
 bool quit = false;
-agent a;
+
+
+
 
 game_world* game_world::get_instance()
 {
@@ -20,16 +23,17 @@ game_world* game_world::get_instance()
 void game_world::update(float d)
 {
 	//std::cout << "UPDATE!" << std::endl;
-	a.update(d);
+	pool.update(d);
 }
 
-void game_world::render()
+void game_world::render(SDL_Renderer* renderer)
 {
 	//std::cout << "RENDER!" << std::endl;
-	a.render();
+	pool.render(renderer);
 }
 
 game_world::game_world()
 {
-	a = agent();
+	pool = agent_pool();
+	//pool.create();
 }

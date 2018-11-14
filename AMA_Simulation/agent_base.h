@@ -15,6 +15,8 @@ public:
 	virtual ~agent_base();
 	point_2d position;
 	agent_model * model = new agent_model();
+	bool is_active;
+	void init();
 };
 
 inline agent_base::agent_base()
@@ -23,4 +25,9 @@ inline agent_base::agent_base()
 
 inline agent_base::~agent_base()
 {
+}
+
+inline void agent_base::init()
+{
+	is_active = true;
 }

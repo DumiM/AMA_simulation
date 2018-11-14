@@ -9,9 +9,9 @@ class agent_model
 {
 private:
 	virtual ~agent_model();
-	matrix<double> shape_matrix;
 public:
 	agent_model();
+	matrix<double> shape_matrix;
 };
 
 

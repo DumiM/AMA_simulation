@@ -18,12 +18,33 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="game_world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

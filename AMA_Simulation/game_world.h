@@ -1,4 +1,7 @@
 #pragma once
+#include <SDL.h>
+#include "agent_pool.h"
+
 class game_world
 {
 private:
@@ -6,9 +9,14 @@ private:
 
 	game_world();
 public:
+	int max_x;
+	int max_y;
+
+	agent_pool pool;
+
 	static  game_world* get_instance();
 	void update(float);
-	void render();
+	void render(SDL_Renderer*);
 
 };
 
